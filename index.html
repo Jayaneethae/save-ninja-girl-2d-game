@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>2D Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+<div id="overlay">
+    <h1>Loading Game Assets</h1>
+    <div id="progress-bar">
+        <div id="bar"></div>
+    </div>
+</div>
+<div id="character"></div>
+<div class="plane"></div>
+<!--<div class="knife"></div>-->
+
+<div id="exit"></div>
+<div id="full-screen-btn" class="hide full-screen-btn-lighten"></div>
+<div id="level">
+    <span id="minus"></span>
+    <div><h4>Difficulty Level</h4><h6 id="difficulty-level">Medium</h6></div>
+    <span id="plus"></span>
+</div>
+<div id="restart"></div>
+<!--<div class="broken-plane"></div>-->
+
+<!--<div id="platform">-->
+<!--    <div id="tile1"></div>-->
+<!--    <div id="tile2"></div>-->
+<!--    <div id="tile3"></div>-->
+<!--</div>-->
+
+<div id="cage-container" class="cage-container hide">
+    <div><img src="./public/image/ninja-girl.png" id="ninja-girl"></div>
+    <div id="cage"></div>
+</div>
+
+<!-- Character Health Bar -->
+<div id="character-health-container">
+    <div id="character-health-bar"></div>
+</div>
+
+<!-- Plane Health Bar -->
+<div id="plane-health-container">
+    <div id="plane-health-bar"></div>
+</div>
+
+<!--Game over screen-->
+<div id="game-over" class="hide">
+    <h1>GAME OVER</h1>
+    <h5>The Ninja Girl is Dead</h5>
+    <div id="restart-screen"></div>
+</div>
+
+<!--Level complete-->
+
+<div id="level-complete" class="hide">
+    <div id="replay"></div>
+</div>
+<!--stages-->
+
+<div id="stage1"></div>
+<div id="stage2"></div>
+<div id="stage3"></div>
+
+<!--saw-->
+<div id="saw" class="hide"></div>
+
+
+<div id="start-screen">
+    <h2>Save Ninja Girl<br><span>2D</span> Game</h2>
+    <button type="button">PLAY</button>
+    <div id="footer">Copyright &copy; 2024 Asiri Ekanayaka. All Rights Reserved.</div>
+</div>
+</body>
+</html>
